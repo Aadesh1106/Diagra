@@ -17,7 +17,7 @@ export const config = {
       model: process.env.OPENAI_MODEL || 'gpt-4-turbo-preview',
     },
     google: {
-      apiKey: process.env.GOOGLE_API_KEY || 'AIzaSyAd7KP3vYpUB6Wdx4YYfewl8uYnlGKbyIE',
+      apiKey: process.env.GOOGLE_API_KEY || 'Enter_your_Google_API_key',
       model: process.env.GOOGLE_MODEL || 'gemini-1.5-pro',
     },
   },
