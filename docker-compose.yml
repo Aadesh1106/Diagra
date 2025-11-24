@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  plantuml:
+    image: plantuml/plantuml-server:jetty
+    container_name: uml-generator-plantuml
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    environment:
+      - PLANTUML_LIMIT_SIZE=8192
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  postgres:
+    image: postgres:14-alpine
+    container_name: uml-generator-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: uml_user
+      POSTGRES_PASSWORD: uml_password
+      POSTGRES_DB: uml_generator
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U uml_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres_data:
