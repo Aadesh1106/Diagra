@@ -1,22 +1,21 @@
-# Natural Language to UML Generator 🎨
+# Natural Language to UML Generator 
 
 > Transform natural language into professional UML diagrams using AI
 
 A powerful web application that automatically generates comprehensive UML diagrams (Class, Sequence, Activity, Use Case) from natural language descriptions using GPT-4 and PlantUML.
 
-## ✨ Features
+##  Features
 
-- 🤖 **AI-Powered**: Uses GPT-4 or Google Gemini to understand natural language and generate UML
-- 🆓 **FREE Option**: Google Gemini offers 1,500 diagrams/day for free!
-- 📊 **Multiple Diagram Types**: Class, Sequence, Activity, Use Case, and more
-- 🔄 **Version Control**: Regenerate and manage multiple versions of diagrams
-- 💾 **Persistent Storage**: Save all projects and diagrams to PostgreSQL
-- 📥 **Export Options**: Download diagrams as SVG or PlantUML source code
-- 🎨 **Modern UI**: Responsive React interface with TailwindCSS
-- 🚀 **Fast Setup**: Docker-based deployment for easy installation
-- 💰 **Cost Effective**: Free tier available with Google Gemini
+-  **AI-Powered**: Uses GPT-4 or Google Gemini to understand natural language and generate UML
+-  **Multiple Diagram Types**: Class, Sequence, Activity, Use Case, and more
+-  **Version Control**: Regenerate and manage multiple versions of diagrams
+-  **Persistent Storage**: Save all projects and diagrams to PostgreSQL
+-  **Export Options**: Download diagrams as SVG or PlantUML source code
+-  **Modern UI**: Responsive React interface with TailwindCSS
+-  **Fast Setup**: Docker-based deployment for easy installation
+-  **Cost Effective**: Free tier available with Google Gemini
 
-## 🚀 Quick Start
+##  Quick Start
 
 **Want to get started immediately?** → See [QUICKSTART.md](QUICKSTART.md)
 
@@ -26,7 +25,7 @@ A powerful web application that automatically generates comprehensive UML diagra
 4. Run the app
 5. Generate diagrams!
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Home Page - Enter Your System Description
 ```
@@ -94,7 +93,7 @@ diagra/
 └── README.md
 ```
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -121,15 +120,12 @@ diagra/
 └────────────────┘ └────────────┘ └──────────────────┘
 ```
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - **Node.js 18+** - [Download](https://nodejs.org/)
 - **Docker Desktop** - [Download](https://www.docker.com/products/docker-desktop)
 - **LLM API Key** - Choose one:
   - **Google Gemini (Recommended - FREE!)** - [Get key](https://aistudio.google.com/app/apikey)
-    - ✅ 1,500 free requests/day
-    - ✅ No credit card required
-    - ✅ See [GOOGLE_GEMINI_SETUP.md](GOOGLE_GEMINI_SETUP.md)
   - **OpenAI (Alternative)** - [Get key](https://platform.openai.com/api-keys)
     - $5 trial credit
     - Requires credit card after trial
@@ -197,15 +193,15 @@ docker run -d -p 8080:8080 plantuml/plantuml-server:jetty
 
 ## Features
 
-- ✅ Natural language to UML conversion
-- ✅ Multiple diagram types (Class, Sequence, Activity, Use Case)
-- ✅ Diagram versioning
-- ✅ Download SVG/PNG
-- ✅ Download DSL source
-- ✅ Regenerate individual diagrams
-- ✅ Project history
+-  Natural language to UML conversion
+-  Multiple diagram types (Class, Sequence, Activity, Use Case)
+-  Diagram versioning
+-  Download SVG/PNG
+-  Download DSL source
+-  Regenerate individual diagrams
+-  Project history
 
-## 💡 Usage Examples
+##  Usage Examples
 
 ### Example 1: E-commerce Platform
 ```
@@ -247,17 +243,9 @@ authorization, fraud detection, and account statements.
 Diagram Types: Class, Sequence, Activity, Use Case
 ```
 
-## 📚 Documentation
 
-- **[QUICKSTART.md](QUICKSTART.md)** - Get running in 5 minutes
-- **[GOOGLE_GEMINI_SETUP.md](GOOGLE_GEMINI_SETUP.md)** - Use FREE Google Gemini API (Recommended!)
-- **[SETUP.md](SETUP.md)** - Detailed setup instructions
-- **[COMMANDS.md](COMMANDS.md)** - CLI commands reference
-- **[API.md](API.md)** - Complete API documentation
-- **[PROJECT_SUMMARY.md](PROJECT_SUMMARY.md)** - Project overview
-- **[CHECKLIST.md](CHECKLIST.md)** - Installation checklist
 
-## 🎯 Key Features Explained
+##  Key Features Explained
 
 ### AI-Powered Diagram Generation
 - Leverages GPT-4 to understand natural language descriptions
@@ -287,7 +275,7 @@ Diagram Types: Class, Sequence, Activity, Use Case
 - Share diagram URLs
 - Print-ready format
 
-## 🛠️ Technology Stack Details
+##  Technology Stack Details
 
 ### Backend Stack
 | Technology | Purpose | Why? |
@@ -311,18 +299,18 @@ Diagram Types: Class, Sequence, Activity, Use Case
 | React Router | Navigation | Client-side routing |
 | Axios | HTTP Client | Promise-based API calls |
 
-## 🔒 Security Considerations
+##  Security Considerations
 
-- ✅ Environment variables for sensitive data
-- ✅ CORS configuration for API protection
-- ✅ Input validation and sanitization
-- ✅ SQL injection protection via Prisma
-- ✅ JWT authentication (optional)
-- ✅ Error handling without exposing internals
-- ⚠️ Rate limiting (recommended for production)
-- ⚠️ API key rotation (recommended)
+-  Environment variables for sensitive data
+-  CORS configuration for API protection
+-  Input validation and sanitization
+-  SQL injection protection via Prisma
+-  JWT authentication (optional)
+-  Error handling without exposing internals
+-  Rate limiting (recommended for production)
+-  API key rotation (recommended)
 
-## 📊 Database Schema
+##  Database Schema
 
 ```sql
 -- Users (optional for guest usage)
@@ -361,7 +349,7 @@ diagram_versions
   - createdAt
 ```
 
-## 🚦 Development Workflow
+##  Development Workflow
 
 ### Initial Setup
 ```powershell
@@ -404,7 +392,7 @@ Invoke-WebRequest http://localhost:8080
 cd backend && npm run prisma:studio
 ```
 
-## 🐛 Troubleshooting Guide
+##  Troubleshooting Guide
 
 ### Issue: "Cannot connect to database"
 **Solution:**
@@ -444,7 +432,7 @@ netstat -ano | findstr :3000
 taskkill /PID <PID> /F
 ```
 
-## 🚀 Deployment Guide
+##  Deployment Guide
 
 ### Environment Setup
 1. Set up managed PostgreSQL (AWS RDS, Azure Database, etc.)
@@ -469,23 +457,23 @@ npm run build
 - **Database**: Managed PostgreSQL (AWS RDS, Supabase, Neon, Railway)
 - **Docker**: Container orchestration (Docker Swarm, Kubernetes, ECS)
 
-## 📈 Performance Optimization
+##  Performance Optimization
 
 ### Backend Optimization
-- ✅ Database connection pooling (Prisma)
-- ✅ Lazy loading of diagrams
-- ⚠️ Redis caching for frequent requests
-- ⚠️ CDN for diagram images
-- ⚠️ Load balancing for scaling
+-  Database connection pooling (Prisma)
+-  Lazy loading of diagrams
+-  Redis caching for frequent requests
+-  CDN for diagram images
+-  Load balancing for scaling
 
 ### Frontend Optimization
-- ✅ Code splitting with Vite
-- ✅ React Query caching
-- ✅ Lazy loading of routes
-- ⚠️ Image optimization
-- ⚠️ Service Worker for PWA
+-  Code splitting with Vite
+-  React Query caching
+-  Lazy loading of routes
+-  Image optimization
+-  Service Worker for PWA
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Here's how:
 
@@ -495,24 +483,7 @@ Contributions are welcome! Here's how:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- OpenAI for GPT-4 API
-- PlantUML for diagram rendering
-- Prisma for excellent ORM
-- React and TypeScript communities
-
-## 📞 Support
-
-Need help? Check out:
-- [QUICKSTART.md](QUICKSTART.md) for quick setup
-- [SETUP.md](SETUP.md) for detailed instructions
-- [API.md](API.md) for API reference
-- [COMMANDS.md](COMMANDS.md) for CLI commands
 
 ---
 
